@@ -1,0 +1,201 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".EditProfileActivity">
+
+    <!-- Dashboard Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dashboardCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/dashboardTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- ScrollView with Constraints -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/dashboardCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/editTextGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:padding="16dp">
+
+
+            <!-- Display user ID -->
+            <TextView
+                android:id="@+id/textViewUserId"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:text="User ID: "
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Full Name -->
+            <EditText
+                android:id="@+id/editFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <!-- Phone Number -->
+            <EditText
+                android:id="@+id/editPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <!-- Email Address -->
+<!--            <EditText-->
+<!--                android:id="@+id/editEmailAddress"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Email Address"-->
+<!--                android:inputType="textEmailAddress"-->
+<!--                android:background="@drawable/rounded_edittext"-->
+<!--                android:padding="12dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textColorHint="#757575"-->
+<!--                android:textSize="16sp" />-->
+
+            <!-- Street Address -->
+            <EditText
+                android:id="@+id/editStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street Address"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <!-- City -->
+            <EditText
+                android:id="@+id/editCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <!-- State Spinner -->
+            <Spinner
+                android:id="@+id/editStateSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:spinnerMode="dropdown"/>
+
+
+            <!-- Postal Code -->
+            <EditText
+                android:id="@+id/editPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Code"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <!-- Municipal Area -->
+            <EditText
+                android:id="@+id/editMunicipalArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Municipality"
+                android:inputType="text"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#757575"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/registrationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Registration Date"
+                android:inputType="text"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp" />
+
+            <!-- Update Button -->
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:padding="12dp"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">fill_pit</string>
+
+    <string name="dashboard_title">FILLPIT DASHBOARD</string>
+    <string name="user_image_description">User Image</string>
+    <string name="dashboard_title_Previous">PREVIOUS SUBMISSION</string>
+    <string name="dashboard_title_Settins">USER SETTINGS</string>
+    <string name="user_details_label">USER Details:</string>
+    <string name="user_id">USER ID- Fill_0124</string>
+    <string name="user_name">Name- Akshit Singh</string>
+    <string name="user_area">Area- Chandralok Colony</string>
+    <string name="user_submissions">Total Submissions- 02</string>
+    <string name="actions_title">ACTIONS</string>
+    <string name="upload_image_button">UPLOAD IMAGE</string>
+    <string name="previous_submissions_button">PREVIOUS SUBMISSIONS</string>
+    <string name="complaint_status_button">COMPLAINT STATUS</string>
+    <string name="area_saharanpur">Area: Saharanpur</string>
+
+</resources>

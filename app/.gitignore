@@ -1,0 +1,29 @@
+# Android Studio
+*.iml
+.gradle/
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Firebase
+app/google-services.json
+
+# Local properties and config
+local.properties
+
+# Keystore files
+*.jks
+*.keystore
+
+# OS-specific
+.DS_Store
+
+# IntelliJ-specific (redundant files in case .idea is not fully excluded)
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml

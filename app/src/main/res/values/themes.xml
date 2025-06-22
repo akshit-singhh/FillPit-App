@@ -1,0 +1,36 @@
+<resources xmlns:tools2="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.Fill_pit" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">#6448A8</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#071723</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Transparent status bar -->
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Button Style -->
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+
+        <!-- EditText Style -->
+        <item name="editTextStyle">@style/CustomEditTextStyle</item>
+    </style>
+    <!-- Custom EditText Style -->
+    <style name="CustomEditTextStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:background">@drawable/rounded_edittext</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">#757575</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+</resources>

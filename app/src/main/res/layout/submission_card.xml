@@ -1,0 +1,80 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Left side for text views (complaint details) -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Complaint ID -->
+            <TextView
+                android:id="@+id/submissionId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complaint ID: FILL_123456"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Complaint Description -->
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description: Pothole on road"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Landmark -->
+            <TextView
+                android:id="@+id/landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Landmark: Near XYZ Park"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Submission Date -->
+            <TextView
+                android:id="@+id/submissionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submission Date: 01/01/2025"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <!-- Complaint Status -->
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status: Pending"
+                android:textSize="14sp"
+                android:textColor="#FF9800" />
+        </LinearLayout>
+
+        <!-- Right side for Image -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/road" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

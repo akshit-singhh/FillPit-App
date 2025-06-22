@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="BottomRoundedCardView" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+    </style>
+
+    <style name="CircularShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">60dp</item> <!-- Adjust to fit your image perfectly -->
+        <item name="strokeColor">@android:color/holo_blue_light</item>
+        <item name="strokeWidth">5dp</item>
+    </style>
+
+    <style name="RoundedRectangleShapeAppearance">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item> <!-- Adjust for more or less rounded corners -->
+        <item name="strokeColor">@android:color/holo_blue_light</item>
+        <item name="strokeWidth">4dp</item>
+    </style>
+
+
+
+</resources>
